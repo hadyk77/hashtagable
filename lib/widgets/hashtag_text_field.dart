@@ -357,7 +357,7 @@ class HashTagTextField extends StatefulWidget {
         'Use maxLengthEnforcement parameter which provides more specific '
         'behavior related to the maxLength limit. '
         'This feature was deprecated after v1.25.0-5.0.pre.')
-        this.maxLengthEnforced = true,
+    this.maxLengthEnforced = true,
     this.maxLengthEnforcement,
     this.onChanged,
     this.onEditingComplete,
@@ -1198,7 +1198,7 @@ class _HashTagTextFieldState extends State<HashTagTextField>
     final TextStyle style =
         theme.textTheme.titleMedium!.merge(widget.basicStyle);
     final Brightness keyboardAppearance =
-        widget.keyboardAppearance ?? theme.primaryColorBrightness;
+        widget.keyboardAppearance ?? theme.brightness;
     final TextEditingController controller = _effectiveController;
     final FocusNode focusNode = _effectiveFocusNode;
     final List<TextInputFormatter> formatters = <TextInputFormatter>[
